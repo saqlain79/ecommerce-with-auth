@@ -1,0 +1,27 @@
+label
+{
+    width: 50%;
+    justify-content: center;
+    text-align: left;
+}
+.table-design
+{
+    margin: auto;
+    display: flex;
+    padding-top: 20px;
+    width: 60%;
+    text-align: center; 
+}
+input
+{
+    width: 50%;
+    justify-content: center;
+    
+}
+.input-design{
+    color: black;
+}
+
+
+
+
