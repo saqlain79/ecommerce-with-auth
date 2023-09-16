@@ -1,9 +1,11 @@
 <section class="why_section layout_padding">
          <div class="container">
             <div class="heading_container heading_center">
-               <h2>
-                  Why Shop With Us
-               </h2>
+            <h1 style="color:white; font-size:70px;">
+                  <span>
+                  <b>Why Shop With Us</b>
+                  </span>
+            </h1>
             </div>
             <div class="row">
                <div class="col-md-4">

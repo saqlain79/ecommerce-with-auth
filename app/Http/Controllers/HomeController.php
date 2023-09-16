@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use Illuminate\Support\Facades\Auth;
 
 use App\Models\User;
@@ -15,6 +14,8 @@ use App\Models\Replies;
 
 use Session;
 use Stripe;
+
+use RealRashid\SweetAlert\Facades\Alert;
 
 class HomeController extends Controller
 {
@@ -90,7 +91,9 @@ class HomeController extends Controller
                 }
                 $cart->save();
 
-                return redirect()->back()->with('message', 'Product Added to Cart');
+                Alert::success('Product Added to Cart', 'Thank You');
+
+                return redirect()->back();
             }
             else
             {
@@ -115,7 +118,10 @@ class HomeController extends Controller
                 $cart->quantity = $request->quantity;
 
                 $cart->save();
-                return redirect()->back()->with('message', 'Product Added to Cart');
+                
+                Alert::success('Product Added to Cart', 'Thank You');
+
+                return redirect()->back();
             }
         }
         else
