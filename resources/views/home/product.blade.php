@@ -20,7 +20,7 @@
                 @endif
             <div class="row">
                @foreach($product as $p)
-               <div class="" style="display:block; height:auto; width:100%">
+               <div class="col-md-4">
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
@@ -42,7 +42,7 @@
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="/product/{{$p->image}}" alt="">
+                        <img src="/product/{{$p->image}}" alt="" style="width:200px; height:200px">
                      </div>
                      <div class="detail-box">
                         <h5 style="margin:5px">
@@ -65,9 +65,12 @@
                   </div>
                </div>
                @endforeach
+               <br>
+               
                <span style="padding-top:20px">
                {!!$product->withQueryString()->links('pagination::bootstrap-5')!!}
                </span>
+               
             </div>
             <!-- <div class="btn-box">
                <a href="">

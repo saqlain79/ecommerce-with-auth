@@ -46,7 +46,7 @@ class HomeController extends Controller
         }
         else
         {
-            $product = Product::paginate(3);
+            $product = Product::paginate(6);
             $comments = Comment::orderby('id','desc')->get();
             $reply = Replies::all();
             return view('index', compact('product','comments','reply'));
@@ -57,7 +57,7 @@ class HomeController extends Controller
     {
         $comments = Comment::orderby('id','desc')->get();
         $reply = Replies::all();
-        $product = Product::paginate(3);
+        $product = Product::paginate(6);
         return view('index', compact('product','comments','reply'));
     }
 
@@ -118,7 +118,7 @@ class HomeController extends Controller
                 $cart->quantity = $request->quantity;
 
                 $cart->save();
-                
+
                 Alert::success('Product Added to Cart', 'Thank You');
 
                 return redirect()->back();
@@ -335,7 +335,7 @@ class HomeController extends Controller
     {
         $comments = Comment::orderby('id','desc')->get();
         $reply = Replies::all();
-        $product = Product::paginate(3);
+        $product = Product::paginate(8);
         return view('home.product_page',compact('product','comments','reply'));
     }
 
