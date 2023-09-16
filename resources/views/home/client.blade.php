@@ -12,13 +12,13 @@
                         <div class="img_container">
                            <div class="img-box">
                               <div class="img_box-inner">
-                                 <img src="template/images/client.jpg" alt="">
+                                 <img src="" alt="">
                               </div>
                            </div>
                         </div>
                         <div class="detail-box">
                            <h5>
-                              Anna Trevor
+                              Customer 1
                            </h5>
                            <h6>
                               Customer
@@ -34,13 +34,13 @@
                         <div class="img_container">
                            <div class="img-box">
                               <div class="img_box-inner">
-                                 <img src="template/images/client.jpg" alt="">
+                                 <img src="" alt="">
                               </div>
                            </div>
                         </div>
                         <div class="detail-box">
                            <h5>
-                              Anna Trevor
+                              Customer 2
                            </h5>
                            <h6>
                               Customer
@@ -56,13 +56,13 @@
                         <div class="img_container">
                            <div class="img-box">
                               <div class="img_box-inner">
-                                 <img src="template/images/client.jpg" alt="">
+                                 <img src="" alt="">
                               </div>
                            </div>
                         </div>
                         <div class="detail-box">
                            <h5>
-                              Anna Trevor
+                              Customer 3
                            </h5>
                            <h6>
                               Customer
